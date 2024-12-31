@@ -1,3 +1,4 @@
+# Data pre processing
 import pandas as pd
 import nltk
 from nltk.tokenize import word_tokenize
@@ -6,10 +7,10 @@ from nltk.stem import WordNetLemmatizer
 import re
 
 # Download necessary NLTK data
-nltk.download('punkt_tab')
-nltk.download('stopwords')
-nltk.download('wordnet')
-nltk.download('omw-1.4')
+# nltk.download('punkt_tab')
+# nltk.download('stopwords')
+# nltk.download('wordnet')
+# nltk.download('omw-1.4')
 
 dataset_path = 'Task2/MovieReviewTrainingDatabase.csv'
 data = pd.read_csv(dataset_path)
@@ -51,3 +52,34 @@ data['processed_review'] = data['review'].apply(preprocess_text)
 
 
 print(data[['review', 'processed_review']].head())
+
+
+
+# Feature engeeniring
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report, accuracy_score
+
+
+tfidf = TfidfVectorizer(max_features=5000)
+X = tfidf.fit_transform(data['processed_review']).toarray()
+print("Shape of TF-IDF matrix:", X.shape)
+
+
+y=data['sentiment']
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+print("Training set size:", X_train.shape)
+print("Testing set size:", X_test.shape)
+
+
+model = LogisticRegression()
+model.fit(X_train, y_train)
+
+y_pred = model.predict(X_test)
+
+# Evaluate the model
+print("Accuracy:", accuracy_score(y_test, y_pred))
+print("Classification Report:\n", classification_report(y_test, y_pred))
