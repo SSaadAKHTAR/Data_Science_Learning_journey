@@ -56,7 +56,7 @@ print(data[['review', 'processed_review']].head())
 
 
 # Feature engeeniring
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, accuracy_score
@@ -83,3 +83,12 @@ y_pred = model.predict(X_test)
 # Evaluate the model
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print("Classification Report:\n", classification_report(y_test, y_pred))
+
+# for custom inputs
+custom_input = "I love this product! It's amazing. but some times its bad as well"
+custom_input_transformed = preprocess_text(custom_input)
+custom_input_tfidf = tfidf.transform([custom_input_transformed]).toarray()
+y_pred_custom = model.predict(custom_input_tfidf)
+print(f"Predicted sentiment: {y_pred_custom}")
+
+
