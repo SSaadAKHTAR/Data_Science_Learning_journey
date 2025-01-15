@@ -30,7 +30,7 @@ The objective is to predict house prices using the **Boston Housing Dataset** by
 ---
 ### Model Performance
 - **Report and MSE of the Models:**
-  ![Confusion Matrix](./Task4/screenshots/image.png)
+  ![Confusion Matrix](./screenshots/image.png)
 
 
 ## Outcome
