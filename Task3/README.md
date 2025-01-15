@@ -27,7 +27,7 @@ The task focuses on creating a **fraud detection system** to classify transactio
 ---
 ### Model Performance
 - **Classification report:**
-  ![Confusion Matrix](./Task3/screenshots/image.png)
+  ![Confusion Matrix](./screenshots/image.png)
 
 
 ## Outcome

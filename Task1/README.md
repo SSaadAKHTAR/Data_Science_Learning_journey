@@ -37,22 +37,22 @@ The objective of this task is to perform **Exploratory Data Analysis (EDA)** on 
 ---
 ### Data Visualizations
 - **Price Distribution:**
-  ![Bar Chart](./Task1/Screenshots/image.png)
+  ![Bar Chart](./Screenshots/image.png)
 
 - **Price vs Rating:**
-  ![Histogram](./Task1/Screenshots/image copy.png)
+  ![Histogram](./Screenshots/image copy.png)
 
 - **Length of stay Distribution:**
-  ![Histogram](./Task1/Screenshots/image copy 2.png)
+  ![Histogram](./Screenshots/image copy 2.png)
 
 - **Price vs Rating:**
-  ![Histogram](./Task1/Screenshots/image copy 3.png)
+  ![Histogram](./Screenshots/image copy 3.png)
 
 - **Count of properties by Number of beds:**
-  ![Histogram](./Task1/Screenshots/image copy 4.png)
+  ![Histogram](./Screenshots/image copy 4.png)
 
 - **Correlation heat map of Numeric Features:**
-  ![Histogram](./Task1/Screenshots/image copy 5.png)
+  ![Histogram](./Screenshots/image copy 5.png)
 
 ## Outcome
 - A Jupyter Notebook or Python script containing:
