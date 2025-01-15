@@ -29,6 +29,11 @@ This task involves building a **sentiment analysis model** to classify text revi
 
 ---
 
+### Model Performance
+- **Classification Report:**
+  ![Confusion Matrix](./Task2/screenshots/image.png)
+
+
 ## Outcome
 - A Python script that:
   - Processes input text for prediction.

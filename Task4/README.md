@@ -28,6 +28,10 @@ The objective is to predict house prices using the **Boston Housing Dataset** by
 - Visualized feature importance for tree-based models to identify the most influential variables.
 
 ---
+### Model Performance
+- **Report and MSE of the Models:**
+  ![Confusion Matrix](./Task4/screenshots/image.png)
+
 
 ## Outcome
 - A Python script containing:

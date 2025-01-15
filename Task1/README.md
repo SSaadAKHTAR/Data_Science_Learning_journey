@@ -35,6 +35,24 @@ The objective of this task is to perform **Exploratory Data Analysis (EDA)** on 
   - Patterns and anomalies in the dataset.
 
 ---
+### Data Visualizations
+- **Price Distribution:**
+  ![Bar Chart](./Task1/Screenshots/image.png)
+
+- **Price vs Rating:**
+  ![Histogram](./Task1/Screenshots/image copy.png)
+
+- **Length of stay Distribution:**
+  ![Histogram](./Task1/Screenshots/image copy 2.png)
+
+- **Price vs Rating:**
+  ![Histogram](./Task1/Screenshots/image copy 3.png)
+
+- **Count of properties by Number of beds:**
+  ![Histogram](./Task1/Screenshots/image copy 4.png)
+
+- **Correlation heat map of Numeric Features:**
+  ![Histogram](./Task1/Screenshots/image copy 5.png)
 
 ## Outcome
 - A Jupyter Notebook or Python script containing:

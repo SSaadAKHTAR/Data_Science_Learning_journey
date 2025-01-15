@@ -25,6 +25,10 @@ The task focuses on creating a **fraud detection system** to classify transactio
   - Predict whether a transaction is fraudulent.
 
 ---
+### Model Performance
+- **Classification report:**
+  ![Confusion Matrix](./Task3/screenshots/image.png)
+
 
 ## Outcome
 - A Python script capable of:

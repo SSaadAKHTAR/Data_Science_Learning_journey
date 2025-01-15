@@ -28,7 +28,7 @@ import joblib
 # joblib.dump(model, 'fraud_detection_model.pkl')
 # print("its saved")
 
-loaded_model = joblib.load('fraud_detection_model.pkl')
+loaded_model = joblib.load('Task3/fraud_detection_model.pkl')
 print("Model loaded successfully!")
 
 # Use the loaded model for predictions
@@ -43,7 +43,7 @@ print(classification_report(y_test, y_pred))
 print("\nAccuracy Score:")
 print(accuracy_score(y_test, y_pred))
 
-model_path = 'fraud_detection_model.pkl'
+model_path = 'Task3/fraud_detection_model.pkl'
 try:
     model = joblib.load(model_path)
     print(f"Model loaded successfully from '{model_path}'!")
