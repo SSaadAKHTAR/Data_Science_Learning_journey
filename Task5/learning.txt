@@ -1,0 +1,50 @@
+Smote for over samplimg the minority class
+
+feature filtering
+
+standard scaler
+
+onehot for converting categorical values to numerical values and each category of the feature will be treated separately in different column or new column
+
+for conerting binary categories in binary
+processed_data_df["Gender"] = processed_data_df["Gender"].replace({"Male": 0, "Female": 1})
+
+LabelEncoder for encoding a categorical feature 
+
+
+comparing the score of features
+                              Feature         Score
+15                        MonthlyRate  1196.634
+1                           DailyRate  956.5805 ======  
+24                  TotalWorkingYears  230.7216  ===
+28                 YearsInCurrentRole  117.5226  =====
+30               YearsWithCurrManager  110.6715  ====
+18                           OverTime  63.84507 =====
+2                    DistanceFromHome  63.77214 =====
+6                      EmployeeNumber  58.12033  ---
+23                   StockOptionLevel  25.26883  =======
+11                           JobLevel  24.93924  =======    
+13                      MaritalStatus  18.74566 =====
+31                    JobRole_Encoded  9.004448
+14                      MonthlyIncome  7.973467  =======
+29            YearsSinceLastPromotion  7.601723   ====
+12                    JobSatisfaction  7.011947 =======
+7             EnvironmentSatisfaction  6.890594  ========
+16                 NumCompaniesWorked  6.438654  ========
+10                     JobInvolvement  4.605616 ====
+0                                 Age  3.909579 ======
+27                     YearsAtCompany  3.552501  =====
+25              TrainingTimesLastYear  3.085796  =====
+21           RelationshipSatisfaction  1.332333 =========
+32        Department_Encoded           1.329297
+26                    WorkLifeBalance  1.085543  ======
+4                      EducationField  0.8349116 =====
+8                              Gender  0.7651298 ====
+3                           Education  0.5206422 =====
+9                          HourlyRate  0.4.317791 =======
+19                  PercentSalaryHike  0.2.350269  ======
+20                  PerformanceRating  0.0005.060644 ===
+41             BusinessTravel_Encoded  0.000002.202693   =====
+5                       EmployeeCount  3.408412e-30  ---
+22                      StandardHours  0.000000e+00 ---
+17                             Over18           NaN ---
