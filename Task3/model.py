@@ -12,14 +12,15 @@ smote = SMOTE(random_state=42)
 X = training_data.drop(columns=['is_fraud', 'gender', 'job'])
 y = training_data['is_fraud']
 
-X_resampled, y_resampled = smote.fit_resample(X, y)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-# model = RandomForestClassifier(random_state=42, n_estimators=100, max_depth=None)
-# model.fit(X_train,y_train)
+Xtrain_resampled, ytrain_resampled = smote.fit_resample(X_train, y_train)
 
-# y_pred = model.predict(X_test)
+model = RandomForestClassifier(random_state=42, n_estimators=100, max_depth=None)
+model.fit(Xtrain_resampled,ytrain_resampled)
+
+y_pred = model.predict(X_test)
 
 
     

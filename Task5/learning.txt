@@ -48,3 +48,8 @@ comparing the score of features
 5                       EmployeeCount  3.408412e-30  ---
 22                      StandardHours  0.000000e+00 ---
 17                             Over18           NaN ---
+
+
+
+
+Random forest regressor provide better accuracy
