@@ -53,3 +53,30 @@ comparing the score of features
 
 
 Random forest regressor provide better accuracy
+
+
+
+
+Key Insights & Recommendations to Reduce Attrition
+1. Work-Life Balance & OverTime
+Insight: Employees with a high Work-Life Balance and less Overtime are less likely to leave.
+Recommendation:
+✅ Implement flexible work hours and reduce overtime pressure to retain employees.
+2. Job Satisfaction & Environment Satisfaction
+Insight: Higher Job Satisfaction and Environment Satisfaction reduce attrition.
+Recommendation:
+✅ Conduct employee engagement surveys and address dissatisfaction proactively.
+✅ Provide career growth opportunities and recognition programs to boost satisfaction.
+3. Distance from Home
+Insight: Employees who live far from the office have a higher chance of leaving.
+Recommendation:
+✅ Offer remote work options or relocation assistance for long-distance employees.
+4. Training & Performance Rating
+Insight: Employees with low Training Times and low Performance Ratings are more likely to leave.
+Recommendation:
+✅ Provide continuous learning opportunities (certifications, training, mentorship).
+✅ Implement fair performance evaluations with constructive feedback.
+5. Job Level & Years in Current Role
+Insight: Employees who stay in the same role too long without promotion may leave.
+Recommendation:
+✅ Ensure fair career progression and internal promotions to keep employees motivated.
