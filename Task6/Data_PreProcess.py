@@ -3,6 +3,7 @@ import re
 import spacy 
 from spacy.lang.en.stop_words import STOP_WORDS
 
+
 data_set_path = 'Task6/article_highlights.csv'
 
 data = pd.read_csv(data_set_path)
@@ -48,6 +49,11 @@ def remove_stopwords(tokens):
 data['filtered_article'] = data['tokenized_article'].apply(remove_stopwords)
 data['filtered_highlights'] = data['tokenized_highlights'].apply(remove_stopwords)
 
+
+
+
 # Save cleaned dataset
 data.to_csv("Task6/cleaned_dataset.csv", index=False)
 print('Dataset is processed and save')
+
+
