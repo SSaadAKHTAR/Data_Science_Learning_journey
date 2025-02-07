@@ -1,0 +1,32 @@
+Step 1: Data Preprocessing
+Why? Raw text contains noise (e.g., HTML tags, special characters, stopwords) that can degrade model performance.
+How?
+Load the CNN/Daily Mail dataset.
+Tokenize sentences and remove unnecessary characters.
+Normalize text (convert to lowercase, remove stopwords if needed).
+Step 2: Extractive Summarization (Using spaCy)
+Why? Extractive summarization picks the most important sentences without altering their wording.
+How?
+Use spaCy or TextRank to extract key sentences based on their importance.
+Rank sentences based on word frequency or similarity.
+Select the top-ranked sentences as the summary.
+Step 3: Abstractive Summarization (Using Pre-Trained Models)
+Why? Abstractive summarization generates summaries in a more human-like, paraphrased way.
+How?
+Use Hugging Face's transformers library with models like BART, T5, or GPT.
+Load a pre-trained summarization model (facebook/bart-large-cnn or t5-small).
+Fine-tune the model on the CNN/Daily Mail dataset if needed.
+Step 4: Fine-Tuning for Better Summaries
+Why? Pre-trained models may not always produce the best results for your specific dataset.
+How?
+Train the model further on the CNN/Daily Mail dataset.
+Adjust hyperparameters like learning rate, batch size, and training steps.
+Evaluate with loss functions and metrics like ROUGE score.
+Step 5: Testing and Evaluation
+Why? To ensure that the model generates high-quality summaries.
+How?
+Run the model on real-world articles.
+Compare extractive and abstractive summaries.
+Measure summary coherence using human evaluation or ROUGE scores.
+
+task done till step 3
