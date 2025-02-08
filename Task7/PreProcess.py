@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.stats import zscore # for outliers
+from sklearn.preprocessing import StandardScaler
 
 dataset_path = 'Task7/diabetes.csv'
 
@@ -56,4 +57,23 @@ print(data.isnull().sum())
 
 
 
+# Feature scaling which is only nessesary for models like SVM, neural networks, logistic regression, knn and not nessesary for models like Decision trees and Gradient boosting.
+# Select numeric features
+features = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 
+            'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age']
+
+scaled_data = data
+scaler = StandardScaler()
+scaled_data[features] = scaler.fit_transform(data[features])
+
+# feature selection
+# we can also drop the feature if it is highly corelated with another feature by using corelation matrix
+# plt.figure(figsize=(10,8))
+# sns.heatmap(data.corr(), annot=True, cmap='coolwarm', fmt=".2f")
+# plt.title("Feature Correlation Matrix")
+# plt.show() # according to this there are no highly corelated feature so on the bases of correlation we are not going to drop any feature
+
+# saving the data and scaled data unscaled data
+scaled_data.to_csv('Task7/CleanedScaledData.csv', index=False)
+data.to_csv('Task7/CleanedData.csv', index=False)
 

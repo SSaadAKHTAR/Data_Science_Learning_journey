@@ -18,6 +18,16 @@ Feature importance from tree-based models
 Scale numerical features using StandardScaler or MinMaxScaler.
 Convert categorical variables into numerical format using One-Hot Encoding or Label Encoding.
 
+🔹 Why Do We Need Feature Scaling?
+Some features in the dataset have different ranges (e.g., Glucose is in the range of 0–200, while DiabetesPedigreeFunction is between 0–2).
+
+Gradient Boosting, Decision Trees → No Scaling Required
+SVM, Neural Networks → Require Scaling
+KNN, Logistic Regression → Require Scaling
+📌 Scaling ensures all features contribute equally to the model.
+
+
+
 Step 4: Model Selection & Training
 Split the dataset into training and testing sets (80-20 or 70-30 split).
 Train different models such as:
@@ -39,3 +49,9 @@ Apply cross-validation to improve generalization.
 Step 7: Interpretation & Insights
 Use SHAP (SHapley Additive Explanations) or LIME to understand how each feature influences predictions.
 Identify risk factors that contribute to the disease for healthcare professionals.
+
+
+Understanding Gradient Boosting
+Gradient Boosting is a powerful machine learning algorithm that builds an ensemble of weak learners 
+(usually decision trees) and improves their performance by minimizing errors iteratively. It is 
+widely used for classification and regression tasks.
