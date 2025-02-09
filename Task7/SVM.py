@@ -8,7 +8,7 @@ import lime
 from lime.lime_tabular import LimeTabularExplainer
 
 # importing scaled_data
-scaled_data_path = 'Task7/CleanedScaledData.csv'
+scaled_data_path = '/content/Data_Science_Learning_journey/Task7/CleanedScaledData.csv'
 data = pd.read_csv(scaled_data_path)
 
 X = data.drop(columns=["Outcome"])
